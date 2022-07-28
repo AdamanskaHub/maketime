@@ -1,5 +1,5 @@
 <script>
-	export let priorities = ['somehting','else'];
+	export let priorities = [];
   let info =""
   function validate() {
     if (info != '') {
