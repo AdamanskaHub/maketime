@@ -7,12 +7,18 @@
       priorities = [...priorities, info];
       info=""
     }
-    
 	}
+  function remove(item) {
+    alert(item)
+  priorities = priorities.filter((value) => value.id !== item.id);
+  };
 </script>
 
 {#each priorities as priority}
-  <p>{priority}</p>
+<div let:dataItem let:item>
+  <span>{priority}</span><div class="spacing"></div><span on:click={() => remove(priority)}>X</span>
+</div>
+
 {/each}
 
 
