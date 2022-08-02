@@ -5,7 +5,7 @@
 </script>
 
 <h1>Make time</h1>
-<p>This are the inputs {inputs[0]}</p>
+<p>These are the inputs</p>
 <Inputs bind:priorities={inputs}/>
 
 <style>
